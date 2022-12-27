@@ -8,9 +8,9 @@
     <br>
 
     <h2 class="text-h5">Contributions to open source projects</h2>
-    <v-container>
+    <v-card>
       <div class="github">
-        <v-card max-width="50%">
+        <v-container max-width="50%">
           <v-col class="d-flex justify-center pa-2">
             <v-row class="d-flex justify-center pa-2">
               <v-progress-circular
@@ -25,9 +25,9 @@
               <span class="text-body-1">Loading the Contribution Graph...</span>
             </v-row>
           </v-col>
-        </v-card>
+        </v-container>
       </div>
-    </v-container>
+    </v-card>
     <v-container>
       <ul>
         <li>added <a
