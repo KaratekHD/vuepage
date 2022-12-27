@@ -57,7 +57,7 @@ import GitHubCalendar from "github-calendar";
 
 function get_age() {
   const formatter = new Intl.RelativeTimeFormat('en')
-  const birthday = new Date("2005-07-15")
+  const birthday = new Date("2005-08-01")
   const diff = Date.now() - birthday
   return formatter.format(Math.trunc(diff / (1000 * 60 * 60 * 24 * 365)), "years")
 }
