@@ -39,7 +39,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <default-bar @toggleDrawer="toggleDrawer()"/>
+    <default-bar @customtheme="customTheme()" @toggleDrawer="toggleDrawer()"/>
 
     <default-view/>
 
@@ -50,11 +50,33 @@
 <script setup>
 import DefaultBar from './AppBar.vue'
 import DefaultView from './View.vue'
-import {ref} from "vue";
+import {onMounted, ref} from "vue";
+import {useTheme} from "vuetify";
 
 let drawer = ref(false)
+const theme = useTheme()
+let useCustomTheme = false
 
 function toggleDrawer() {
   drawer.value = !drawer.value
 }
+
+function customTheme() {
+  useCustomTheme = true
+  theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+}
+
+onMounted(() => {
+  if (!useCustomTheme) {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      theme.global.name.value = "dark"
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+      if (!useCustomTheme) {
+        theme.global.name.value = event.matches ? "dark" : "light"
+
+      }
+    });
+  }
+})
 </script>

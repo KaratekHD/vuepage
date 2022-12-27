@@ -5,8 +5,9 @@
       KaratekHD
     </v-app-bar-title>
     <template v-slot:append>
-      <v-btn icon @click="toggleTheme()">
-        <v-icon icon="mdi-brightness-6" />
+      <v-btn icon @click="$emit('customtheme')">
+        <v-icon v-if="theme.global.name.value === 'dark'" icon="mdi-weather-sunny" />
+        <v-icon v-else icon="mdi-weather-night" />
       </v-btn>
     </template>
   </v-app-bar>
@@ -17,7 +18,4 @@ import {useTheme} from "vuetify";
 
 const theme = useTheme()
 
-function toggleTheme() {
-  theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
-}
 </script>
