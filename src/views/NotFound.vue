@@ -11,7 +11,8 @@
 <script setup>
 </script>
 
-<style scoped>
+<style lang="scss">
+
 .error-message {
   font-size: 1.25rem;
   line-height: 1.5;
@@ -28,14 +29,45 @@
 }
 
 .error-code {
-  font-size: 300px;
+font-size: 300px;
   line-height: 1.13;
   font-weight: 600;
   letter-spacing: 0;
-  margin: 2.5rem 0 10rem;
+  margin: 2.5rem 0;
   display: inline-block;
   background: linear-gradient(35deg, #1867C0, #BB86FC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: #0000;
 }
+
+@media only screen and (max-width: 2000px) {
+  .error-code {
+    font-size: 300px;
+  }
+}
+
+@media only screen and (max-width: 1904px) {
+  .error-code {
+    font-size: 300px;
+  }
+}
+
+@media only screen and (max-width: 1264px) {
+  .error-code {
+    font-size: 300px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .error-code {
+    font-size: 50vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .error-code {
+    font-size: 25vw;
+  }
+}
+
 </style>
