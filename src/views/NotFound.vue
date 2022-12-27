@@ -1,0 +1,41 @@
+<template>
+  <v-container class="fill-height">
+    <v-responsive class="fill-height">
+      <h1 class="text-h4 error-header">Yikes. Something went wrong.</h1>
+      <p class="error-message">Sorry, we can’t find the page you are looking for.<br>Maybe you mistyped something?</p>
+      <span class="error-code">404</span>
+    </v-responsive>
+  </v-container>
+</template>
+
+<script setup>
+</script>
+
+<style scoped>
+.error-message {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+}
+
+.error-header {
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.error-code {
+  font-size: 300px;
+  line-height: 1.13;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin: 2.5rem 0 10rem;
+  display: inline-block;
+  background: linear-gradient(35deg, #1867C0, #BB86FC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #0000;
+}
+</style>
