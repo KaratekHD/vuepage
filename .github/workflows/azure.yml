@@ -3,11 +3,11 @@ name: Azure Static Web Apps CI/CD
 on:
   push:
     branches:
-      - gh-pages
+      - main
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
-      - gh-pages
+      - main
 
 jobs:
   build_and_deploy_job:
@@ -18,7 +18,9 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
-      - name: Build And Deploy
+      - name: Build Vue
+        run: ls -l
+      - name: Deploy to Azure
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
