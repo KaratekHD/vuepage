@@ -73,5 +73,5 @@ onMounted(() => {
 </script>
 
 <style>
-@import 'github-calendar/dist/github-calendar-responsive.css';
+@import '@/styles/github.css';
 </style>
