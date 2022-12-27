@@ -11,5 +11,5 @@ jobs:
       with:
         username: 'KaratekHD'
         reponame: 'vuepage'
-        yarn: 'true'
+        useyarn: 'true'
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
