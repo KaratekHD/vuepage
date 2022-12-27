@@ -8,7 +8,7 @@
     <br>
 
     <h2 class="text-h5">Contributions to open source projects</h2>
-    <v-card>
+    <v-card class="contributions">
       <div class="github">
         <v-container max-width="50%">
           <v-col class="d-flex justify-center pa-2">
@@ -68,10 +68,17 @@ function get_age() {
 
 onMounted(() => {
   GitHubCalendar(".github", "KaratekHD", {responsive: true});
+  /*const texts = document.getElementsByClassName("ContributionCalendar-label")
+  for (let i = 0; i < 19; i++) {
+    console.log(texts[i])
+  }*/
 
 })
 </script>
 
 <style>
-@import '@/styles/github.css';
+@import '@/styles/github.scss';
+.contributions {
+  margin-top: 1rem;
+}
 </style>
