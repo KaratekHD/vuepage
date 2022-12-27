@@ -28,25 +28,29 @@
         </v-card>
       </div>
     </v-container>
+    <v-container>
+      <ul>
+        <li>added <a
+          href="https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/package-management/DNF/">DNF</a>
+          support to the <a href="https://github.com/openSUSE/opi">openSUSE Package Installer (opi)</a></li>
+        <li>Maintains and runs the <a href="https://github.com/KaratekHD/Nemesis/">Telegram Group Management Bot</a> for
+          the openSUSE Telegram Groups
+        </li>
+        <li>Moderates the openSUSE <a href="https://reddit.com/r/openSUSE">Subreddit</a>, <a
+          href="https://t.me/opensuse">Telegram
+          group</a> and <a href="https://discord.gg/opensuse">Discord Server</a></li>
+      </ul>
+    </v-container>
 
-    <ul>
-      <li>added <a
-        href="https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/package-management/DNF/">DNF</a>
-        support to the <a href="https://github.com/openSUSE/opi">openSUSE Package Installer (opi)</a></li>
-      <li>Maintains and runs the <a href="https://github.com/KaratekHD/Nemesis/">Telegram Group Management Bot</a> for
-        the openSUSE Telegram Groups
-      </li>
-      <li>Moderates the openSUSE <a href="https://reddit.com/r/openSUSE">Subreddit</a>, <a href="https://t.me/opensuse">Telegram
-        group</a> and <a href="https://discord.gg/opensuse">Discord Server</a></li>
-    </ul>
     <br>
     <h2 class="text-h5">Hobbies</h2>
     In my spare time, I like to to all sorts of different things.
     I do Karate and canoeing, and obviously I code.
-    In addition I am also very active at my local church, doing youth work and all sorts of other things to make a difference in church - so that is doesn't keep it's old and boring look.
+    In addition I am also very active at my local church, doing youth work and all sorts of other things to make a
+    difference in church - so that is doesn't keep it's old and boring look.
     I also love music: I play the piano and am currently learning to play the organ.
     <br>
-    
+
   </v-container>
 </template>
 
