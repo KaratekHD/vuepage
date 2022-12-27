@@ -97,6 +97,7 @@ import opensuseIcon from '@iconify-icons/simple-icons/opensuse';
 
 .social-button {
   margin-right: 5px;
+margin-bottom: 5px;
 }
 
 </style>
