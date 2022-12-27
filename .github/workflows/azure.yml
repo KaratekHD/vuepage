@@ -18,9 +18,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
-      - name: Build Vue
-        run: ls -l
-      - name: Deploy to Azure
+      - name: Build Vue and deploy to Azure
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
