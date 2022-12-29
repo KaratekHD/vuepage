@@ -1,0 +1,9 @@
+{
+    "routes": [
+    {
+      "route": "/.well-known*",
+    }],
+    "navigationFallback": {
+        "rewrite": "/index.html"
+    }
+}

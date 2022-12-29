@@ -1,0 +1,1 @@
+import{g as a,p as s,l as o,t as r}from"./index.6a94bbc0.js";function i(e){const t=a("useRender");t.render=e}const d=s({tag:{type:String,default:"div"}},"tag");const c=o({name:"VContainer",props:{fluid:{type:Boolean,default:!1},...d()},setup(e,t){let{slots:n}=t;return i(()=>r(e.tag,{class:["v-container",{"v-container--fluid":e.fluid}]},n)),{}}});export{c as V,d as m,i as u};
