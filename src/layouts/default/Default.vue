@@ -64,17 +64,24 @@ function toggleDrawer() {
 function customTheme() {
   useCustomTheme = true
   theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+  swapGithubStyle(theme.global.name.value)
+}
+
+function swapGithubStyle(name) {
+  document.getElementById("pagestyle").setAttribute("href", "github-" + name + ".css");
+
 }
 
 onMounted(() => {
   if (!useCustomTheme) {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       theme.global.name.value = "dark"
+      swapGithubStyle(theme.global.name.value)
     }
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
       if (!useCustomTheme) {
         theme.global.name.value = event.matches ? "dark" : "light"
-
+        swapGithubStyle(theme.global.name.value)
       }
     });
   }
