@@ -1,9 +1,38 @@
 <template>
   <v-container class="fill-height">
     <v-responsive class="fill-height">
-      <h1 class="text-h4 error-header">Yikes. Something went wrong.</h1>
-      <p class="error-message">Sorry, we can’t find the page you are looking for.<br>Maybe you mistyped something?</p>
-      <span class="error-code">404</span>
+      <v-row>
+        <v-col>
+          <h1 class="text-h4 error-header">Yikes. Something went wrong.</h1>
+          <p class="error-message">Sorry, we can’t find the page you are looking for.<br>Maybe you mistyped something?
+          </p>
+          <div>
+
+            <v-btn color="primary"
+                   to="/"
+                   min-width="228"
+                   size="x-large"
+                   variant="flat">
+              <v-icon
+                icon="mdi-home"
+                size="large"
+                start
+              />
+              <v-tooltip
+                activator="parent"
+                location="bottom"
+              >Country roads...
+              </v-tooltip>
+              Take me home!
+            </v-btn>
+          </div>
+        </v-col>
+        <v-col>
+          <span class="error-code">404</span>
+
+        </v-col>
+      </v-row>
+
     </v-responsive>
   </v-container>
 </template>
@@ -29,7 +58,7 @@
 }
 
 .error-code {
-font-size: 300px;
+  font-size: 300px;
   line-height: 1.13;
   font-weight: 600;
   letter-spacing: 0;
