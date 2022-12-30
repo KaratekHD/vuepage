@@ -6,7 +6,7 @@
     <v-row>
       <v-col cols="12" md="4">
         <project-card title="OpenGM" description="Opensoure Telegram Group Manager written in Python."
-                      link="https://t.me/karatekbot" source="https://github.com/KaratekHD/Nemesis">
+                      link="https://opengm.karatek.net" source="https://github.com/KaratekHD/Nemesis">
           <v-img
             src="@/assets/projects/opengm.png"
             :aspect-ratio="16/9"
@@ -48,7 +48,8 @@
     <div class="text-h5">Misc</div>
     <v-row>
       <v-col cols="12" md="4">
-        <project-card title="KJeopardy" description="Opensource jeopardy application written in Python with KDE Frameworks 5."
+        <project-card title="KJeopardy"
+                      description="Opensource jeopardy application written in Python with KDE Frameworks 5."
                       source="https://github.com/KaratekHD/kjeopardy">
           <v-img
             src="https://raw.githubusercontent.com/KaratekHD/kjeopardy/main/screenshots/grid.png"
