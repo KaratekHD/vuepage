@@ -27,6 +27,11 @@
             <v-icon icon="mdi-view-dashboard"/>
           </template>
         </v-list-item>
+        <v-list-item to="/services" color="primary" title="Services">
+          <template v-slot:prepend>
+            <v-icon icon="mdi-server"/>
+          </template>
+        </v-list-item>
         <v-list-item href="//blog.karatek.net" color="primary" title="Blog">
           <template v-slot:prepend>
             <v-icon icon="mdi-newspaper"/>
